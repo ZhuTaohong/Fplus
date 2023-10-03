@@ -73,7 +73,7 @@ def crash_analyze(code_path):
     memory = ConversationBufferMemory(memory_key="chat_history")
 
     llm_chain = LLMChain(
-        llm=OpenAI(openai_api_key="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", temperature=0.3,
+        llm=OpenAI(openai_api_key="", temperature=0.3,
                    max_tokens=2000),
         prompt=prompt,
         memory=memory
